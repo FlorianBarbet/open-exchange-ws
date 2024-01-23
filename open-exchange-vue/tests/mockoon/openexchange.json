@@ -1,0 +1,141 @@
+{
+  "uuid": "365fbeea-4f6a-4402-90a3-1f106d705e7b",
+  "lastMigration": 32,
+  "name": "Openexchange",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "69e1e63c-70e3-46df-883a-b3be3f2d238b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/historical/:date",
+      "responses": [
+        {
+          "uuid": "f57a8856-e7df-487b-be07-ffc5cab9ce3d",
+          "body": "{\r\n  \"disclaimer\": \"Usage subject to terms: https://openexchangerates.org/terms\",\r\n  \"license\": \"https://openexchangerates.org/license\",\r\n  \"timestamp\": \"{{ faker 'number.int' min=1000000000 max=9999999999 }}\",\r\n  \"base\": \"USD\",\r\n  \"rates\": {\r\n    \"AED\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"AFN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ALL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"AMD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ANG\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"AOA\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ARS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"AUD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"AWG\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"AZN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BAM\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BBD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BDT\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BGN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BHD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BIF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BMD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BND\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BOB\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BRL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BSD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BTC\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BTN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BWP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BYR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"BZD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CAD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CDF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CHF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CLF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CLP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CNY\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"COP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CRC\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CUP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CVE\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"CZK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"DJF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"DKK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"DOP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"DZD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"EEK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"EGP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ETB\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"EUR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"FJD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"FKP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GBP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GEL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GHS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GIP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GMD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GNF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GTQ\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"GYD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"HKD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"HNL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"HRK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"HTG\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"HUF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"IDR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ILS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"INR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"IQD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"IRR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ISK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"JEP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"JMD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"JOD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"JPY\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KES\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KGS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KHR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KMF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KPW\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KRW\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KWD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KYD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"KZT\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LAK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LBP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LKR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LRD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LSL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LTL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LVL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"LYD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MAD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MDL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MGA\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MKD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MMK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MNT\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MOP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MRO\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MUR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MVR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MWK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MXN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MYR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"MZN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"NAD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"NGN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"NIO\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"NOK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"NPR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"NZD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"OMR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"PAB\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"PEN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"PGK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"PHP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"PKR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"PLN\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"PYG\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"QAR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"RON\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"RSD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"RUB\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"RWF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SAR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SBD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SCR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SDG\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SEK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SGD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SHP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SLL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SOS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SRD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"STD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SVC\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SYP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"SZL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"THB\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TJS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TMT\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TND\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TOP\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TRY\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TTD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TWD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"TZS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"UAH\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"UGX\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"USD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"UYU\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"UZS\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"VEF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"VND\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"VUV\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"WST\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"XAF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"XCD\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"XDR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"XOF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"XPF\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"YER\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ZAR\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ZMK\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\",\r\n    \"ZWL\": \"{{ faker 'number.float' min=0 max=100 precision=0.000001 }}\"\r\n  }\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "app_id",
+              "value": "secret",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "c4aba075-2aa1-491a-bfec-b5389535c227",
+          "body": "{\r\n  \"error\": true,\r\n  \"status\": 401,\r\n  \"message\": \"invalid_app_id\",\r\n  \"description\": \"Invalid App ID provided. Please sign up at https://openexchangerates.org/signup, or contact support@openexchangerates.org.\"\r\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "invalid app-id",
+          "headers": [
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "app_id",
+              "value": "secret",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "69e1e63c-70e3-46df-883a-b3be3f2d238b"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": true,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

@@ -1,0 +1,28 @@
+services:
+  db:
+    image: mysql:8
+    volumes:
+      - "./open-exchange-back-py/resources/changelog.sql:/docker-entrypoint-initdb.d/1.sql"
+    networks:
+      - backnet
+    environment:
+      - MYSQL_DATABASE=open_exchange
+      # we should add some security here (don't have enough time to deal with it sorry)
+      # we could add a secret manager like Vault or something like that
+      - MYSQL_ROOT_PASSWORD_FILE=$MY_SQL_PASSWORD
+    expose:
+      - 3306
+      - 33060
+  backend:
+    build:
+      context: backend
+      target: builder
+    restart: always
+    ports:
+      - 5000:5000
+    networks:
+      - backnet
+      - frontnet
+    depends_on:
+      db:
+        condition: service_healthy
